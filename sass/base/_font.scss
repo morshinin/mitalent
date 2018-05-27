@@ -1,0 +1,6 @@
+// fface($name, $url, $weight, $style)
+@include fface(Nunito, '../font/Nunito-Regular.ttf', 'truetype', normal, normal)
+
+@include fface(Nunito, '../font/Nunito-ExtraBold.ttf', 'truetype', 800, normal)
+
+@include fface(Nunito, '../font/Nunito-SemiBold.ttf', 'truetype', 600, normal)

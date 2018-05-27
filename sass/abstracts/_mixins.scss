@@ -6,8 +6,18 @@
 	}
 }
 
+// Generate font-face
+@mixin fface($name, $url, $format, $weight, $style) {
+	@font-face {
+		font-family: $name;
+		src: url($url) format($format);
+		font-weight: $weight;
+		font-style: $style;
+	}
+}
+
 // Center horizontaly and verticaly
-@mixin hvCenter {
+@mixin absCenter {
 	position: absolute;
 	top: 50%;
 	left: 50%;

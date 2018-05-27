@@ -58,4 +58,20 @@
 		width: calc(((100% - #{$gutter-horizontal} * 3) / 4) * 3 + #{$gutter-horizontal} * 2);
 	}
 
+	.col-1-of-12 {
+	  width: calc((100% - #{$gutter-horizontal} * 11) / 12);
+	}
+	.col-2-of-12 {
+	  width: calc(((100% - #{$gutter-horizontal} * 5) / 12) * 2);
+	}
+	.col-3-of-12 {
+	  width: calc(((100% - #{$gutter-horizontal} * 3) / 12) * 3);
+	}
+	.col-4-of-12 {
+	  width: calc(((100% - #{$gutter-horizontal} * 2) / 12) * 4);
+	}
+	.col-6-of-12 {
+	  width: calc(((100% - #{$gutter-horizontal}) / 12) * 6);
+	}
+
 }

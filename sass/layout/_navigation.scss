@@ -1,3 +1,29 @@
 .navigation {
 
+	&__button {
+
+	}
+
+	&__icon {
+
+	}
+
+	&__link {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: 800;
+			font-size: $link-font-size;
+			line-height: 3rem;
+			letter-spacing: 2.8px;
+			color: $link-color-default;
+			display: inline-block;
+			margin-left: 5rem;
+		}
+
+		&:hover {
+			color: $link-color-hover-default;
+		}
+	}
 }

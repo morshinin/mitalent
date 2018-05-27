@@ -1,3 +1,19 @@
 .header {
+	@include clearfix;
 
+	position: absolute;
+	width: 100%;
+	padding: 6.7rem 6.1rem;
+
+	&__nav {
+		float: left;
+	}
+
+	&__logo-box {
+		@include absCenter;
+	}
+
+	&__search-box {
+		float: right;
+	}
 }
