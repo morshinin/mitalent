@@ -1,8 +1,7 @@
 .header {
 	@include clearfix;
 
-	position: absolute;
-	width: 100%;
+	position: relative;
 	padding: 6.7rem 6.1rem;
 
 	&__nav {

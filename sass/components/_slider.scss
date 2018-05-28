@@ -1,0 +1,77 @@
+.slider {
+	position: relative;
+	height: 81rem;
+
+	&__slide {
+		position: absolute;
+		width: 100%;
+		height: 81rem;
+	}
+
+	&__video {
+		width: 112.1rem;
+		height: 81rem;
+		background-color: $color-primary-light-2;
+	}
+
+	&__content {
+		position: absolute;
+		left: 25.9rem;
+		top: 0;
+	}
+
+	&__controls {
+		position: absolute;
+	}
+
+	&__social {
+		position: absolute;
+		top: 0;
+	}
+
+	&__icon {
+		&:link,
+		&:visited {
+			text-decoration: none;
+			font-size: $font-size-xs;
+			display: block;
+			color: $font-color-default;
+		}
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+
+	&__number {
+		position: absolute;
+		transform: rotate(-90deg);
+		top: 20rem;
+
+		&:before {
+			content: '';
+			width: 5rem;
+			height: 2px;
+			background-color: $color-black;
+			position: absolute;
+			top: .8rem;
+			left: 3rem;
+		}
+	}
+
+	&__button-box {
+		position: absolute;
+		bottom: 0;
+	}
+
+	&__text {
+		position: absolute;
+		top: 26rem;
+		left: -5%;
+	}
+
+	&__heading {
+		max-width: 50rem;
+
+	}
+}

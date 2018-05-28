@@ -1,6 +1,7 @@
 // Colors
 $color-primary: #87bbbc; 
 $color-primary-light: #d9e7e7;
+$color-primary-light-2: #e2e8e8;
 $color-primary-dark: #b4d3d3;
 
 $color-secondary-light: #ffb900;
@@ -32,16 +33,17 @@ $font-color-default: $color-grey-dark;
 $font-color-light: $color-grey-dark-4;
 
 $font-family-default: Nunito, sans-serif;
+$font-family-heading: Poppins, sans-serif;
 $font-weight-default: 400;
 $line-height-default: 1.7;
-$heading-line-height: 1.2;
+$line-height-heading: 1.2;
 
 // FONT SIZES
 $default-font-size: 1.8rem;
-$boss-font-size: 16.85rem;
+$font-size-boss: 10.1rem;
 $font-size-l: 3.5rem;
 $font-size-m: 2.5rem;
-$font-size-s: 1.6rem;
+$font-size-s: 1.7rem;
 $font-size-xs: 1.4rem;
 
 // SPACINGS
@@ -61,10 +63,12 @@ $link-color-default: $font-color-default;
 $link-color-hover-default: $color-primary;
 
 // BUTTONS
+$button-font-size: $font-size-xs;
+
 $button-font-color: $color-white;
 $button-hover-font-color: $color-white;
 
-$button-bg-color: $color-primary;
+$button-bg-color: $color-primary-dark;
 $button-hover-bg-color: darken($color-primary, 3%);
 
 // FOOTER

@@ -5,14 +5,38 @@ body {
 	color: $font-color-default;
 }
 
-a {
+// a {
 
-	&:link,
-	&:visited {
-		color: $link-color-default;
+// 	&:link,
+// 	&:visited {
+// 		color: $link-color-default;
+// 	}
+
+// 	&:hover {
+// 		color: $link-color-hover-default;
+// 	}
+// }
+
+.heading {
+	font-family: $font-family-heading;
+	
+	&--primary {
+		font-size: $font-size-boss;
+		font-weight: normal;
+		line-height: 10rem;
+		letter-spacing: 2px;
+		margin-bottom: 6rem;
 	}
 
-	&:hover {
-		color: $link-color-hover-default;
+	&--secondary {
+
+	}
+
+	&--sub {
+		font-size: $font-size-s;
+		text-transform: uppercase;
+		line-height: 3rem;
+		letter-spacing: 3.4px;
+		font-weight: 600;
 	}
 }
