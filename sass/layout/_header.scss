@@ -12,6 +12,10 @@
 		@include absCenter;
 	}
 
+	&__logo-img {
+		display: block;
+	}
+
 	&__search-box {
 		float: right;
 	}

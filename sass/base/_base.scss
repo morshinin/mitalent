@@ -9,6 +9,7 @@
 html {
 	// This defines what 1rem is
 	font-size: 62.5%; //1rem = 10px
+	max-width: 192rem;
 
 	@include respond(tab-land) {
 		font-size: 56.25%; //1rem = 9px, 9/16 = 50%
@@ -30,4 +31,16 @@ body {
 ::selection {
 	background-color: $color-primary;
 	color: $color-white;
+}
+
+.hr {
+	height: 2px;
+	border: none;
+	background-color: $color-grey-dark-3;
+	width: 15rem;
+	margin: auto;
+}
+
+.pink {
+	background-color: pink;
 }

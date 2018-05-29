@@ -5,17 +5,33 @@ body {
 	color: $font-color-default;
 }
 
-// a {
+.link {
+	&:link,
+	&:visited {
+		font-weight: 800;
+		font-size: $font-size-xxs;
+		line-height: 4rem;
+		letter-spacing: 2.4px;
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $color-grey-dark-2;
+		display: inline-block;
+		border-bottom: 2px solid transparent;
+		min-width: 14.2rem;
+	}
 
-// 	&:link,
-// 	&:visited {
-// 		color: $link-color-default;
-// 	}
+	&--active {
+		&:link,
+		&:visited {
+			color: $font-color-default;
+			border-bottom-color: $font-color-default;
+		}
+	}
 
-// 	&:hover {
-// 		color: $link-color-hover-default;
-// 	}
-// }
+	&:hover {
+		border-bottom-color: inherit;
+	}
+}
 
 .heading {
 	font-family: $font-family-heading;
@@ -29,7 +45,10 @@ body {
 	}
 
 	&--secondary {
-
+		font-size: $font-size-l;
+		font-weight: normal;
+		margin-bottom: 2.1rem;
+		position: relative;
 	}
 
 	&--sub {

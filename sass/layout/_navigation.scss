@@ -1,11 +1,12 @@
 .navigation {
 
 	&__button {
-
 	}
 
 	&__icon {
-
+		display: inline-block;
+		position: relative;
+		top: 3px;
 	}
 
 	&__link {

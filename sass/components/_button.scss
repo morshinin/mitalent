@@ -4,7 +4,6 @@
 	&:visited {
 		text-transform: uppercase;
 		text-decoration: none;
-		padding: 5rem 6.4rem;
 		display: inline-block;
 		transition: all .2s;
 		backface-visibility: hidden;
@@ -26,6 +25,17 @@
 	&--square {
 		color: $color-white;
 		background: $button-bg-color;
+		padding: 4rem 6.4rem;
+	}
+
+	&--primary {
+		color: $color-white;
+		font-size: $font-size-xs;
+		letter-spacing: 2.8px;
+		padding: 1.8rem 4.1rem;
+		font-weight: 800;
+		background-color: $color-primary-dark;
+		border-radius: 100px;
 	}
 	&--white {
 		background: $color-white;
