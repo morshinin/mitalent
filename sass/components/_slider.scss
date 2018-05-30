@@ -1,7 +1,7 @@
 $video-width: 62.6256%; // 112.1rem
 // $video-height: 81rem;
 $video-height: 42.1875vw;
-$social-width: 18.76%;
+$social-width: 18.8%;
 // $slide-width: 77.094972%;
 $slide-width: 77.3%;
 
@@ -20,7 +20,7 @@ $slide-width: 77.3%;
 
 	&__slide {
 		float: left;
-		width: calc(100% - $social-width);
+		width: 100%;
 		position: absolute;
 		opacity: 0;
 
@@ -34,9 +34,17 @@ $slide-width: 77.3%;
 		width: calc(100% - #{$slide-width});
 		margin-top: calc(#{$video-height} - 19.69vw);
 
+		@include respond(tab-port) {
+			margin-top: 10vw;
+		}
+
 		ul {
 			list-style: none;
 			padding: 9rem 0 0 9.5rem;
+
+			@include respond(tab-port) {
+				padding: 9rem 0 0 3rem;
+			}
 
 			li {
 				position: relative;
@@ -66,8 +74,6 @@ $slide-width: 77.3%;
 				line-height: 4.8rem;
 				display: block;
 				color: rgba(105, 105, 112, 0.7);
-
-
 			}
 		}
 	}
@@ -113,21 +119,6 @@ $slide-width: 77.3%;
 		padding-left: .3rem;
 	}
 
-	&__icon {
-		&:link,
-		&:visited {
-			text-decoration: none;
-			font-size: 1.5rem;
-			display: block;
-			color: $font-color-default;
-			margin-bottom: 1.6vw;
-		}
-
-		&:hover {
-			color: $color-primary;
-		}
-	}
-
 	&__number {
 		position: absolute;
 		transform: rotate(-90deg);
@@ -150,7 +141,6 @@ $slide-width: 77.3%;
 	&__button-box {
 		position: absolute;
 		bottom: 0;
-		width: 100%;
 	}
 
 	&__button {
@@ -160,14 +150,22 @@ $slide-width: 77.3%;
 
 	&__text {
 		position: absolute;
-		// top: 26rem;
 		top: 13.542vw;
 		left: -7.3%;
+
+		@include respond(tab-port) {
+			top: 8vw;
+		}
 	}
 
 	&__heading {
 		max-width: 50rem;
 		position: relative;
+
+		@include respond(tab-port) {
+			max-width: 29rem;
+			line-height: 1.2;
+		}
 
 		&:after {
 			@include design-line(medium, $color-white);

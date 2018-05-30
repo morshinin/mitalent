@@ -4,6 +4,10 @@
 	position: relative;
 	padding: 6.7rem 6.1rem;
 
+	@include respond(tab-port) {
+		padding: 3rem 1rem;
+	}
+
 	&__nav {
 		float: left;
 	}
@@ -14,6 +18,10 @@
 
 	&__logo-img {
 		display: block;
+
+		@include respond(tab-port) {
+			width: 15rem;
+		}
 	}
 
 	&__search-box {

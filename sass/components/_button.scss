@@ -15,7 +15,6 @@
 		cursor: pointer;
 	}
 	&:hover {
-
 	}
 	&:active,
 	&:focus {
@@ -26,6 +25,10 @@
 		color: $color-white;
 		background: $button-bg-color;
 		padding: 4rem 6.4rem;
+
+		@include respond(tab-port) {
+			padding: 1rem 2rem;
+		}
 	}
 
 	&--primary {
@@ -36,6 +39,10 @@
 		font-weight: 800;
 		background-color: $color-primary-dark;
 		border-radius: 100px;
+
+		&:hover {
+			background-color: darken($color-primary-dark, 20%);
+		}
 	}
 	&--white {
 		background: $color-white;

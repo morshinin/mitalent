@@ -1,0 +1,17 @@
+.icon {
+	&:link,
+	&:visited {
+		text-decoration: none;
+		font-size: 1.5rem;
+		color: $font-color-default;
+	}
+
+	&:hover {
+		color: $color-primary;
+	}
+
+	&--vertical {
+		margin-bottom: 2.2vw;
+		display: block;
+	}
+}

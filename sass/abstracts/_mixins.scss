@@ -66,6 +66,9 @@ $breakpoint argument choices:
 		width: 6rem;
 		height: 7px;
 		background-color: $color;
+		@include respond(tab-port) {
+			width: 3rem;
+		}
 	}
 	@if $type == large {
 		width: 15rem;

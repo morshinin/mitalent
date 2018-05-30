@@ -2,6 +2,12 @@
 	padding: 10.6rem 6.1rem 0;
 	margin-bottom: 2rem;
 
+	@include respond(tab-port) {
+		padding-top: 0;
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
 	&:before {
 		content: '';
 		width: 39.7%;
@@ -11,6 +17,10 @@
 		top: 0;
 		right: 0;
 		z-index: -1;
+
+		@include respond(tab-port) {
+			height: 30vw;
+		}
 	}
 }
 
@@ -18,9 +28,17 @@
 	padding-top: 8.4rem;
 	margin: 0 auto;
 
+	@include respond(tab-port) {
+		padding-top: 3rem;
+	}
+
 	&__controls {
 		text-align: center;
 		margin-bottom: 8.2rem;
+
+		@include respond(tab-port) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	margin-bottom: 9rem;
@@ -28,4 +46,5 @@
 
 .section-news {
 	margin-top: 6.8rem;
+	margin-bottom: 11.9rem;
 }

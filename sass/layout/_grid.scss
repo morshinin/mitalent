@@ -98,15 +98,18 @@
 
 	[class^="col-"] {
 		float: left;
-
-		&:not(:last-child) {
-			// margin-right: $gutter-horizontal;
-		}
 	}
 
 	.col-1-of-4 {
 		width: calc(100% / 4);
+		
+		@include respond(tab-port) {
+			width: calc(100% / 2);
+		}
 
+		@include respond(phone) {
+			width: 100%;
+		}
 	}
 
 	&:nth-child(odd) {
