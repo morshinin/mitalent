@@ -1019,3 +1019,43 @@ p {
 
 .about__gallery {
   margin-bottom: 12.2rem; }
+
+.client__killer {
+  position: relative;
+  min-height: 108rem; }
+  .client__killer:after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.client__social {
+  position: absolute;
+  top: 25.5%;
+  transform: translateX(-50%);
+  left: 6.1rem; }
+
+.client__text-box, .client__photo-control {
+  float: left; }
+
+.client__text-box {
+  padding-left: 6.1rem;
+  padding-top: 27rem;
+  width: 59.95%;
+  height: 108rem;
+  background-image: linear-gradient(to bottom left, #b4d3d3, #d9e7e7); }
+
+.client__text {
+  background-color: #fff;
+  margin-left: 24rem;
+  padding-left: 14.8rem;
+  padding-top: 13rem;
+  padding-bottom: 16rem; }
+
+.client__photo-control {
+  padding-top: 27rem;
+  padding-right: 12rem; }
+
+.client__photo-box {
+  background-color: #000;
+  height: 50.5rem;
+  width: 63rem; }

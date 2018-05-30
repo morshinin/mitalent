@@ -1,0 +1,49 @@
+.client {
+
+	&__killer {
+		@include clearfix;
+
+		position: relative;
+
+		min-height: 108rem;
+	}
+
+	&__social {
+		position: absolute;
+		top: 25.5%;
+		transform: translateX(-50%);
+		left: 6.1rem;
+	}
+
+	&__text-box,
+	&__photo-control {
+		float: left;
+	}
+
+	&__text-box {
+		padding-left: 6.1rem;
+		padding-top: 27rem;
+		width: 59.95%;
+		height: 108rem;
+		background-image: linear-gradient(to bottom left, $color-primary-dark, $color-primary-light);
+	}
+
+	&__text {
+		background-color: $color-white;
+		margin-left: 24rem;
+		padding-left: 14.8rem;
+		padding-top: 13rem;
+		padding-bottom: 16rem;
+	}
+
+	&__photo-control {
+		padding-top: 27rem;
+		padding-right: 12rem;
+	}
+
+	&__photo-box {
+		background-color: $color-black;
+		height: 50.5rem;
+		width: 63rem;
+	}
+}
