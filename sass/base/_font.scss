@@ -10,3 +10,7 @@
 @include fface(Poppins, '../font/Poppins-Regular.otf', 'opentype', normal, normal)
 
 @include fface(Poppins, '../font/Poppins-Medium.otf', 'opentype', 500, normal)
+
+@include fface('Playfair Display', '../font/PlayfairDisplay-Regular.otf', 'opentype', 400, normal)
+
+@include fface('Playfair Display', '../font/PlayfairDisplay-BoldItalic.otf', 'opentype', bold, italic)

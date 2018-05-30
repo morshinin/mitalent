@@ -58,6 +58,13 @@
 			background-color: $color-primary;
 		}
 	}
+
+	&--icon {
+		padding: 2.6rem 3.5rem;
+		display: inline-block;
+		vertical-align: bottom;
+		font-size: $font-size-m !important;
+	}
 }
 
 .btn-text {

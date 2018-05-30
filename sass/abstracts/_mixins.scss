@@ -61,6 +61,10 @@ $breakpoint argument choices:
 		width: 6rem;
 		height: 2px;
 		background-color: $color;
+
+		@include respond(phone) {
+			width: 3rem;
+		}
 	}
 	@if $type == medium {
 		width: 6rem;

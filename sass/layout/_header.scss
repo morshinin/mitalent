@@ -1,10 +1,13 @@
 .header {
 	@include clearfix;
 
-	position: relative;
+	position: absolute;
+	width: 100%;
 	padding: 6.7rem 6.1rem;
+	z-index: 100;
 
 	@include respond(tab-port) {
+		position: relative;
 		padding: 3rem 1rem;
 	}
 
@@ -14,6 +17,10 @@
 
 	&__logo-box {
 		@include absCenter;
+
+		&--about {
+			left: 56.1%;
+		}
 	}
 
 	&__logo-img {

@@ -5,6 +5,28 @@ body {
 	color: $font-color-default;
 }
 
+p {
+	font-size: $font-size-s;
+	line-height: $line-height-default;
+	color: $font-color-default;
+	font-weight: normal;
+}
+
+.blockquote {
+	font-family: $font-family-accent;
+	text-transform: capitalize;
+	font-size: $font-size-m;
+	padding: 9.6rem 10rem;
+	color: $color-white;
+	background-color: $color-black;
+	text-align: center;
+
+	&__highlight {
+		font-weight: bold;
+		font-style: italic;
+	}
+}
+
 .link {
 	&:link,
 	&:visited {

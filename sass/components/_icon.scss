@@ -13,5 +13,10 @@
 	&--vertical {
 		margin-bottom: 2.2vw;
 		display: block;
+
+		@include respond(phone) {
+			display: inline-block;
+			margin-right: 2rem;
+		}
 	}
 }
