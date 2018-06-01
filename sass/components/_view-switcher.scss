@@ -1,0 +1,9 @@
+.view-switcher {
+	@include clearfix;
+
+	&__icon {
+		float: left;
+		display: inline-block;
+		margin-left: 1rem;
+	}
+}

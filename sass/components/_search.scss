@@ -1,0 +1,12 @@
+.search {
+
+	&__input {
+		border: none;
+		border-left: 1px solid $color-primary;
+		padding-left: 5rem;
+		font-size: $font-size-xs;
+		text-transform: uppercase;
+		letter-spacing: 2.8px;
+		font-weight: 800;
+	}
+}

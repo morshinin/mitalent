@@ -450,6 +450,12 @@ p {
   .btn--primary:hover {
     background-color: #74adad; }
 
+.btn__secondary {
+  background-color: #b4d3d3; }
+
+.btn--radius-small {
+  border-radius: 3px; }
+
 .btn--white {
   background: #fff;
   color: #1a1a1d; }
@@ -720,6 +726,51 @@ p {
 .card-slider {
   height: 43.7rem;
   background-color: #e2e8e8; }
+
+.search__input {
+  border: none;
+  border-left: 1px solid #87bbbc;
+  padding-left: 5rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  font-weight: 800; }
+
+.view-switcher:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.view-switcher__icon {
+  float: left;
+  display: inline-block;
+  margin-left: 1rem; }
+
+.social-feed {
+  padding-left: 6.1rem;
+  padding-top: 36.6rem;
+  min-height: 101rem;
+  position: relative; }
+  .social-feed:after {
+    content: '';
+    clear: both;
+    display: table; }
+  .social-feed:before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 6.1rem;
+    height: 72rem;
+    background-color: #e2e8e8; }
+  .social-feed__heading-group {
+    float: left;
+    max-width: 65rem;
+    background-color: #fff;
+    padding-left: 17.6rem; }
+  .social-feed__icon-group {
+    position: relative;
+    float: left; }
 
 .container {
   max-width: 167.33333rem;
@@ -1022,7 +1073,8 @@ p {
 
 .client__killer {
   position: relative;
-  min-height: 108rem; }
+  min-height: 108rem;
+  margin-bottom: 12rem; }
   .client__killer:after {
     content: '';
     clear: both;
@@ -1033,6 +1085,10 @@ p {
   top: 25.5%;
   transform: translateX(-50%);
   left: 6.1rem; }
+
+.client__number {
+  left: 5rem;
+  top: 69.6%; }
 
 .client__text-box, .client__photo-control {
   float: left; }
@@ -1049,7 +1105,8 @@ p {
   margin-left: 24rem;
   padding-left: 14.8rem;
   padding-top: 13rem;
-  padding-bottom: 16rem; }
+  padding-bottom: 16rem;
+  height: 50.5rem; }
 
 .client__photo-control {
   padding-top: 27rem;
@@ -1058,4 +1115,102 @@ p {
 .client__photo-box {
   background-color: #000;
   height: 50.5rem;
-  width: 63rem; }
+  width: 63rem;
+  overflow: hidden; }
+
+.client__photo {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%; }
+
+.client__heading, .client__subheading {
+  margin-bottom: 5rem; }
+
+.client__subheading {
+  position: relative; }
+  .client__subheading:after {
+    width: 6rem;
+    height: 7px;
+    background-color: #87bbbc;
+    position: absolute;
+    content: '';
+    bottom: .8rem;
+    right: 22rem; }
+    @media only screen and (max-width: 56.25em) {
+      .client__subheading:after {
+        width: 3rem; } }
+
+.client__control-box:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.client__control-text {
+  padding-top: 7.5rem;
+  padding-left: 12.4rem;
+  padding-right: 8rem;
+  padding-bottom: 5rem;
+  background-color: #e2e8e8;
+  float: left; }
+
+.client__control-subheading {
+  font-size: 1.2rem;
+  letter-spacing: 2.4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: relative; }
+  .client__control-subheading:before {
+    width: 6rem;
+    height: 2px;
+    background-color: #87bbbc;
+    content: '';
+    position: absolute;
+    left: -12rem;
+    top: 1rem; }
+    @media only screen and (max-width: 37.5em) {
+      .client__control-subheading:before {
+        width: 3rem; } }
+
+.client__control-heading {
+  font-size: 4.2rem;
+  font-family: Poppins, sans-serif;
+  font-weight: 500; }
+
+.client__controls {
+  float: left;
+  padding-left: 5rem;
+  padding-top: 7.5rem; }
+
+.client__controls-icon {
+  font-size: 1.7rem; }
+  .client__controls-icon--up:before {
+    display: block;
+    transform: rotate(-45deg); }
+  .client__controls-icon--down:before {
+    display: block;
+    transform: rotate(135deg); }
+
+.client__icon-btn {
+  text-decoration: none;
+  color: #1a1a1d;
+  margin-bottom: 4rem;
+  display: block; }
+  .client__icon-btn--deactivated {
+    color: #d3dcdc; }
+
+.client__gallery {
+  padding: 0 12rem; }
+
+.client__gallery-controls-group {
+  margin-bottom: 3rem; }
+  .client__gallery-controls-group:after {
+    content: '';
+    clear: both;
+    display: table; }
+
+.client__gallery-controls {
+  float: left; }
+
+.client__view-switcher {
+  float: right; }
