@@ -1,13 +1,16 @@
 .social-feed {
-	@include clearfix;
 	padding-left: 6.1rem;
 	padding-top: 36.6rem;
 	min-height: 101rem;
 	position: relative;
 
-	&:before {
+	&:before,
+	&:after {
 		content: '';
 		position: absolute;
+	}
+
+	&:before {
 		top: 40%;
 		left: 0;
 		width: 6.1rem;
@@ -15,15 +18,65 @@
 		background-color: $color-primary-light-2;
 	}
 
+	&:after {
+		background: linear-gradient(to bottom left, $color-primary-dark, $color-primary-light) 480px 50px no-repeat, linear-gradient($color-primary-light-2, $color-primary-light-2);
+		width: 144rem;
+		height: 72rem;
+		top: 0;
+    right: 0;
+    z-index: -1;
+	}
+
+	&__row {
+		@include clearfix;
+		padding-left: 17.6rem;
+	}
+
+	&__arrows {
+		float: left;
+	}
+
 	&__heading-group {
 		float: left;
 		max-width: 65rem;
-		background-color: $color-white;
-		padding-left: 17.6rem;
+		background-color: transparent;
 	}
 
 	&__icon-group {
 		position: relative;
 		float: left;
+    left: 70rem;
+    z-index: 10;
+
+    // &:before {
+    // 	content: '';
+    // 	background-image: $gradient-primary;
+    // 	width: 48rem;
+    // 	height: 45rem;
+    // 	position: absolute;
+    // 	right: 0;
+    // 	top: 0;
+    // 	z-index: 1;
+    // }
+	}
+
+	&__quote-text {
+		font-family: $font-family-accent;
+		color: $color-grey-light-2;
+		font-size: $font-size-m;
+		letter-spacing: -1.2px;
+		max-width: 60rem;
+	}
+
+	&__quote-link {
+		color: $color-black;
+
+		&--accent {
+			color: $color-primary-dark-2;
+		}
+	}
+
+	&__quote-group {
+		margin-left: 22rem;
 	}
 }

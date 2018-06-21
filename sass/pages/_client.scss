@@ -31,7 +31,7 @@
 		padding-top: 27rem;
 		width: 59.95%;
 		height: 108rem;
-		background-image: linear-gradient(to bottom left, $color-primary-dark, $color-primary-light);
+		background-image: $gradient-primary;
 	}
 
 	&__text {
@@ -116,35 +116,10 @@
 		font-weight: 500;
 	}
 
-	&__controls {
+	&__arrows {
 		float: left;
 		padding-left: 5rem;
 		padding-top: 7.5rem;
-	}
-
-	&__controls-icon {
-		font-size: $font-size-s;
-
-		&--up:before {
-			display: block;
-			transform: rotate(-45deg);
-		}
-
-		&--down:before {
-			display: block;
-			transform: rotate(135deg);
-		}
-	}
-
-	&__icon-btn {
-		text-decoration: none;
-		color: $font-color-default;
-		margin-bottom: 4rem;
-		display: block;
-
-		&--deactivated {
-			color: $color-primary-light-3;
-		}
 	}
 
 	// GALLERY

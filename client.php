@@ -25,12 +25,12 @@
 					<p class="client__control-subheading">Young model 2020</p>
 					<h2 class="client__control-heading">Georgina Alson</h2>
 				</div>
-				<div class="client__controls">
-					<a href="#0" class="client__icon-btn">
-						<span class="icon-arrow-up-right2 client__controls-icon client__controls-icon--up"></span>
+				<div class="client__arrows">
+					<a href="#0" class="slider__icon-btn slider__icon-btn--block ">
+						<span class="icon-arrow-up-right2 slider__arrows-icon slider__arrows-icon--up"></span>
 					</a>
-					<a href="#0" class="client__icon-btn client__icon-btn--deactivated">
-						<span class="icon-arrow-up-right2 client__controls-icon client__controls-icon--down"></span>
+					<a href="#0" class="slider__icon-btn slider__icon-btn--block  slider__icon-btn--deactivated">
+						<span class="icon-arrow-up-right2 slider__arrows-icon slider__arrows-icon--down"></span>
 					</a>
 				</div>
 			</div>
@@ -144,37 +144,46 @@
 		</div>
 	</section>
 	<section class="social-feed">
-		<div class="social-feed__heading-group">
-			<h2 class="heading heading--primary social-feed__heading">Social connections</h2>
-			<p class="heading heading--sub">On Twitter</p>
+		<div class="social-feed__row">
+			<div class="social-feed__heading-group">
+				<h2 class="heading heading--primary social-feed__heading">Social connections</h2>
+				<p class="heading heading--sub">On Twitter</p>
+			</div>
+			<div class="social-feed__icon-group">
+			  <a href="#0" class="icon icon--vertical"><span class="icon-facebook2"></span></a>
+			  <a href="#0" class="icon icon--vertical"><span class="icon-instagram"></span></a>
+			  <a href="#0" class="icon icon--vertical"><span class="icon-youtube"></span></a>
+			  <a href="#0" class="icon icon--vertical"><span class="icon-twitter"></span></a>
+			</div>
 		</div>
-		<div class="social-feed__icon-group">
-		  <a href="#0" class="icon icon--vertical"><span class="icon-facebook2"></span></a>
-		  <a href="#0" class="icon icon--vertical"><span class="icon-instagram"></span></a>
-		  <a href="#0" class="icon icon--vertical"><span class="icon-youtube"></span></a>
-		  <a href="#0" class="icon icon--vertical"><span class="icon-twitter"></span></a>
-		</div>
-		<div class="social-feed__controls-group">
-			
-		</div>
-		<div class="social-feed__quote-group">
-			<blockquote class="social-feed__quote-text">
-				“ You can listen to <a href="#0">@wiggywalsh</a> <a href="#0">@AdamBuxton</a> talking about Parenting on the iPlayer now! You're Doing It Wrong is available here: <a href="#0">bbc.in/2G3wrYS</a> ”
-			</blockquote>
-			<div class="social-feed__quote-meta">
-				<div class="social-feed__avatar-box">
-					<img src="" alt="" class="social-feed__avatar">
-				</div>
-				<div class="social-feed__user-info">
-					<a href="#0" class="social-feed__user-name">
-						Mass Impressions
-					</a>
-					<div class="social-feed__source-name">
-						on Twitter
+		<div class="social-feed__row">
+			<div class="social-feed__arrows">
+				<a href="#0" class="slider__icon-btn">
+					<span class="icon-arrow-up-right2 slider__arrows-icon slider__arrows-icon--left"></span>
+				</a>
+				<a href="#0" class="slider__icon-btn slider__icon-btn--deactivated">
+					<span class="icon-arrow-up-right2 slider__arrows-icon slider__arrows-icon--right"></span>
+				</a>
+			</div>
+			<div class="social-feed__quote-group">
+				<blockquote class="social-feed__quote-text">
+					“ You can listen to <a class="social-feed__quote-link" href="#0">@wiggywalsh</a> <a class="social-feed__quote-link" href="#0">@AdamBuxton</a> talking about Parenting on the iPlayer now! You're Doing It Wrong is available here: <a class="social-feed__quote-link social-feed__quote-link--accent" href="#0">bbc.in/2G3wrYS</a> ”
+				</blockquote>
+				<div class="social-feed__quote-meta">
+					<div class="social-feed__avatar-box">
+						<img src="" alt="" class="social-feed__avatar">
+					</div>
+					<div class="social-feed__user-info">
+						<a href="#0" class="social-feed__user-name">
+							Mass Impressions
+						</a>
+						<div class="social-feed__source-name">
+							on Twitter
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!-- end of .social-feed__row -->
 	</section>
 </main>
 

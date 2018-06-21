@@ -232,4 +232,42 @@ $slide-width: 77.3%;
 			bottom: 1.5rem;
 		}
 	}
+
+	&__arrows-icon {
+		font-size: $font-size-s;
+
+		&--up:before {
+			display: block;
+			transform: rotate(-45deg);
+		}
+
+		&--down:before {
+			display: block;
+			transform: rotate(135deg);
+		}
+
+		&--left:before {
+			display: inline-block;
+			transform: rotate(-135deg);
+		}
+
+		&--right:before {
+			display: inline-block;
+			transform: rotate(45deg);
+		}
+	}
+
+	&__icon-btn {
+		text-decoration: none;
+		color: $font-color-default;
+		margin-bottom: 4rem;
+
+		&--block {
+			display: block;
+		}
+
+		&--deactivated {
+			color: $color-primary-light-3;
+		}
+	}
 }

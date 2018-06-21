@@ -4,6 +4,7 @@ $color-primary-light: #d9e7e7;
 $color-primary-light-2: #e2e8e8;
 $color-primary-light-3: #d3dcdc;
 $color-primary-dark: #b4d3d3;
+$color-primary-dark-2: #72b9b9;
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
@@ -12,7 +13,7 @@ $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
 $color-grey-light-1: #f7f7f7;
-$color-grey-light-2: #eee;
+$color-grey-light-2: #73737b;
 $color-grey-dark: #1a1a1d;
 $color-grey-dark-2: #696970;
 $color-grey-dark-3: #242424;
@@ -21,6 +22,8 @@ $color-grey-dark-4: #77777e;
 
 $color-white: #fff;
 $color-black: #000;
+
+$gradient-primary: linear-gradient(to bottom left, $color-primary-dark, $color-primary-light);
 
 
 // Grid
